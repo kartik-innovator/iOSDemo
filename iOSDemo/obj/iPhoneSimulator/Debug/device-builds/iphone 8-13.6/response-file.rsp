@@ -2,17 +2,17 @@
 --sgen-conc
 /target-framework:Xamarin.iOS,Version=v1.0
 --http-message-handler=NSUrlSessionHandler
-"--cache=/Users/admin/Projects/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.6/mtouch-cache"
---root-assembly=/Users/admin/Projects/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/iOSDemo.exe
+"--cache=/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.6/mtouch-cache"
+--root-assembly=/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/iOSDemo.exe
 --sdkroot=/Applications/Xcode.app/Contents/Developer
-"--sim=/Users/admin/Projects/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/device-builds/iphone 8-13.6/iOSDemo.app"
+"--sim=/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/device-builds/iphone 8-13.6/iOSDemo.app"
 --executable=iOSDemo
 --nolink
 --sdk=13.6
 --targetver=13.6
 --aot-options=-O=-float32
 --abi=x86_64
-"--symbollist=/Users/admin/Projects/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.6/mtouch-symbols.list"
+"--symbollist=/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 8-13.6/mtouch-symbols.list"
 --dsym=no
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/OpenTK-1.0.dll
