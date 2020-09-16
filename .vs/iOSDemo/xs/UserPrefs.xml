@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{36AB5733-7D8A-45CA-8DBD-B25C0FFB2417}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="iOSDemo" expanded="True">
+            <Node name="iOSDemo" expanded="True">
+              <Node name="Main.storyboard" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.iOSDemo PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.821E43D5-BF11-4755-943E-60F6ED236AFE" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

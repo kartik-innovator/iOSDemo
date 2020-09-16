@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5MRlsgXSU1OVTFatCFyq7c3iBsaRL2FR/k+WnBOQWWpTqx+O/gviVOF1ftQpTgbv7NuXIWvUhIA6kC+K6xdd6g==",
+  "success": true,
+  "projectFilePath": "/Users/admin/Documents/Git/iOSDemo/iOSDemo/iOSDemo.csproj",
+  "expectedPackageFiles": [
+    "/Users/admin/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/admin/.nuget/packages/xamarin.ui.base/1.0.6614.27839/xamarin.ui.base.1.0.6614.27839.nupkg.sha512",
+    "/Users/admin/.nuget/packages/xamarin.ui.ios.radiobutton/1.0.6614.27841/xamarin.ui.ios.radiobutton.1.0.6614.27841.nupkg.sha512"
+  ],
+  "logs": []
+}
