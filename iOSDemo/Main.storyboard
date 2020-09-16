@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="11825">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,15 +25,29 @@
                                 <rect key="frame" x="124" y="162" width="166" height="147"/>
                                 <constraints>
                                     <constraint id="10811" firstAttribute="width" secondItem="201" secondAttribute="height" multiplier="1:1"/>
+                                    <constraint id="97810" firstAttribute="height" constant="100">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint id="97811" firstAttribute="width" constant="100">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="10811"/>
+                                        <exclude reference="97810"/>
+                                        <exclude reference="97811"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="10811"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="97810"/>
+                                        <include reference="97811"/>
                                     </mask>
                                 </variation>
                             </imageView>
@@ -118,7 +132,9 @@
                             <constraint id="339" firstItem="334" firstAttribute="top" secondItem="277" secondAttribute="bottom" constant="20"/>
                             <constraint id="344" firstItem="334" firstAttribute="centerX" secondItem="277" secondAttribute="centerX"/>
                             <constraint id="349" firstItem="334" firstAttribute="leading" secondItem="277" secondAttribute="leading"/>
-                            <constraint id="480" firstItem="475" firstAttribute="top" secondItem="334" secondAttribute="bottom" constant="8"/>
+                            <constraint id="480" firstItem="475" firstAttribute="top" secondItem="334" secondAttribute="bottom" constant="8">
+                                <variation key="heightClass=compact-widthClass=compact" constant="5"/>
+                            </constraint>
                             <constraint id="485" firstItem="475" firstAttribute="centerX" secondItem="334" secondAttribute="centerX"/>
                             <constraint id="598" firstItem="201" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2"/>
                             <constraint id="619" firstItem="201" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92"/>
@@ -128,7 +144,6 @@
                             <constraint id="868" firstItem="829" firstAttribute="leading" secondItem="695" secondAttribute="leading"/>
                             <constraint id="901" firstItem="879" firstAttribute="trailing" secondItem="695" secondAttribute="trailing"/>
                             <constraint id="976" firstItem="829" firstAttribute="top" secondItem="695" secondAttribute="bottom" constant="16"/>
-                            <constraint id="981" firstItem="879" firstAttribute="top" secondItem="695" secondAttribute="bottom" constant="16"/>
                             <constraint id="10048" firstItem="10043" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX"/>
                             <constraint id="10053" firstItem="10043" firstAttribute="top" secondItem="829" secondAttribute="bottom" constant="18"/>
                             <constraint id="10790" firstItem="201" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2"/>
@@ -142,6 +157,20 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
                             <constraint id="93350" firstItem="201" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4"/>
+                            <constraint id="97812" firstItem="201" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint id="97813" firstItem="277" firstAttribute="top" secondItem="201" secondAttribute="bottom" constant="57">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint id="98415" firstItem="695" firstAttribute="top" secondItem="475" secondAttribute="bottom" constant="2"/>
+                            <constraint id="98416" firstItem="334" firstAttribute="top" secondItem="277" secondAttribute="bottom" constant="20">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint id="99019" firstItem="879" firstAttribute="trailing" secondItem="695" secondAttribute="trailing"/>
+                            <constraint id="100230" firstItem="879" firstAttribute="top" secondItem="695" secondAttribute="bottom" constant="16">
+                                <variation key="heightClass=compact-widthClass=compact" constant="16"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -154,6 +183,12 @@
                                 <exclude reference="734"/>
                                 <exclude reference="10874"/>
                                 <exclude reference="93350"/>
+                                <exclude reference="97812"/>
+                                <exclude reference="97813"/>
+                                <exclude reference="98415"/>
+                                <exclude reference="339"/>
+                                <exclude reference="98416"/>
+                                <exclude reference="99019"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -163,6 +198,7 @@
                                 <include reference="295"/>
                                 <include reference="734"/>
                                 <include reference="93350"/>
+                                <include reference="339"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -171,6 +207,16 @@
                                 <include reference="10828"/>
                                 <include reference="10853"/>
                                 <include reference="10874"/>
+                                <include reference="339"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="97812"/>
+                                <include reference="97813"/>
+                                <include reference="98415"/>
+                                <include reference="98416"/>
+                                <include reference="99019"/>
                             </mask>
                         </variation>
                     </view>
@@ -197,17 +243,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2779" translatesAutoresizingMaskIntoConstraints="NO" image="super-HD_1 (1).png">
-                                <rect key="frame" x="83" y="145" width="248" height="132.5"/>
+                                <rect key="frame" x="83" y="140" width="248" height="132.5"/>
                                 <constraints>
                                     <constraint id="2803" firstAttribute="width" secondItem="2779" secondAttribute="height" multiplier="15:8"/>
                                     <constraint id="23120" firstAttribute="width" secondItem="2779" secondAttribute="height" multiplier="442:235"/>
                                     <constraint id="23141" firstAttribute="width" secondItem="2779" secondAttribute="height" multiplier="442:235"/>
+                                    <constraint id="115850" firstAttribute="height" constant="100">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint id="116505" firstAttribute="width" secondItem="2779" secondAttribute="height" multiplier="1:1"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="2803"/>
                                         <exclude reference="23120"/>
                                         <exclude reference="23141"/>
+                                        <exclude reference="115850"/>
+                                        <exclude reference="116505"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -220,57 +272,86 @@
                                         <include reference="23141"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="115850"/>
+                                        <include reference="116505"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="2853" translatesAutoresizingMaskIntoConstraints="NO" image="user.png">
-                                <rect key="frame" x="55" y="372.5" width="30" height="30"/>
+                                <rect key="frame" x="55" y="342.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint id="2892" firstAttribute="height" constant="30"/>
                                     <constraint id="2897" firstAttribute="width" constant="30"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="3039" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Name">
-                                <rect key="frame" x="90" y="367.5" width="248.5" height="40"/>
+                                <rect key="frame" x="90" y="337.5" width="248.5" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <constraints>
                                     <constraint id="3067" firstAttribute="height" constant="40"/>
+                                    <constraint id="116506" firstAttribute="height" constant="40">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                                    </constraint>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3067"/>
+                                        <exclude reference="116506"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3067"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3067"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="116506"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3082" translatesAutoresizingMaskIntoConstraints="NO" image="gender.png">
-                                <rect key="frame" x="55" y="432.5" width="30" height="30"/>
+                                <rect key="frame" x="55" y="402.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint id="3083" firstAttribute="height" constant="30"/>
                                     <constraint id="3084" firstAttribute="width" constant="30"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3089" translatesAutoresizingMaskIntoConstraints="NO" image="email.png">
-                                <rect key="frame" x="55" y="492.5" width="30" height="30"/>
+                                <rect key="frame" x="55" y="462.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint id="3090" firstAttribute="height" constant="30"/>
                                     <constraint id="3091" firstAttribute="width" constant="30"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3096" translatesAutoresizingMaskIntoConstraints="NO" image="calendar.png">
-                                <rect key="frame" x="55" y="552.5" width="30" height="30"/>
+                                <rect key="frame" x="55" y="522.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint id="3097" firstAttribute="height" constant="30"/>
                                     <constraint id="3098" firstAttribute="width" constant="30"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="3103" translatesAutoresizingMaskIntoConstraints="NO" image="password.png">
-                                <rect key="frame" x="55" y="612.5" width="30" height="30"/>
+                                <rect key="frame" x="55" y="582.5" width="30" height="30"/>
                                 <constraints>
                                     <constraint id="3104" firstAttribute="height" constant="30"/>
                                     <constraint id="3105" firstAttribute="width" constant="30"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4686" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="100" y="382" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4686" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="100" y="206" width="30" height="30"/>
                                 <state key="normal"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4707" translatesAutoresizingMaskIntoConstraints="NO" selected="YES">
-                                <rect key="frame" x="93" y="437.5" width="20" height="20"/>
+                                <rect key="frame" x="93" y="407.5" width="20" height="20"/>
                                 <constraints>
                                     <constraint id="4793" firstAttribute="height" constant="20"/>
                                     <constraint id="4798" firstAttribute="width" constant="20"/>
@@ -282,13 +363,13 @@
                                 <state key="selected" backgroundImage="radio_select.png"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4823" translatesAutoresizingMaskIntoConstraints="NO" text="Male">
-                                <rect key="frame" x="121" y="437.5" width="37" height="20.5"/>
+                                <rect key="frame" x="121" y="407.5" width="37" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5029" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="182" y="437.5" width="20" height="20"/>
+                                <rect key="frame" x="182" y="407.5" width="20" height="20"/>
                                 <constraints>
                                     <constraint id="5030" firstAttribute="height" constant="20"/>
                                     <constraint id="5031" firstAttribute="width" constant="20"/>
@@ -299,38 +380,29 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5052" translatesAutoresizingMaskIntoConstraints="NO" text="Female">
-                                <rect key="frame" x="210" y="437.5" width="55.5" height="20.5"/>
+                                <rect key="frame" x="210" y="407.5" width="55.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="5108" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Email">
-                                <rect key="frame" x="90" y="488.5" width="248.5" height="40"/>
+                                <rect key="frame" x="90" y="458.5" width="248.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
-                                <constraints>
-                                    <constraint id="5109" firstAttribute="height" constant="40"/>
-                                </constraints>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6470" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Date of birth">
-                                <rect key="frame" x="90" y="547.5" width="248.5" height="40"/>
+                                <rect key="frame" x="90" y="520.5" width="248.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
-                                <constraints>
-                                    <constraint id="6471" firstAttribute="height" constant="40"/>
-                                </constraints>
                                 <connections/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7065" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password">
-                                <rect key="frame" x="90" y="607.5" width="248.5" height="40"/>
+                                <rect key="frame" x="90" y="580.5" width="248.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" textContentType="password" secureTextEntry="YES"/>
-                                <constraints>
-                                    <constraint id="7066" firstAttribute="height" constant="40"/>
-                                </constraints>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7134" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="121" y="677.5" width="166" height="30"/>
+                                <rect key="frame" x="121" y="644.5" width="166" height="30"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" colorSpace="calibratedRGB" red="0" green="0.47843137254902" blue="1" alpha="1"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -368,11 +440,17 @@
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint id="2784" firstItem="2779" firstAttribute="top" secondItem="2644" secondAttribute="bottom" constant="75"/>
+                            <constraint id="2784" firstItem="2779" firstAttribute="top" secondItem="2644" secondAttribute="bottom" constant="75">
+                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                            </constraint>
                             <constraint id="2789" firstItem="2779" firstAttribute="centerX" secondItem="2648" secondAttribute="centerX"/>
                             <constraint id="2794" firstItem="2779" firstAttribute="width" secondItem="2648" secondAttribute="width" multiplier="0.6"/>
-                            <constraint id="2882" firstItem="2853" firstAttribute="leading" secondItem="2648" secondAttribute="leadingMargin" constant="35"/>
-                            <constraint id="2887" firstItem="2853" firstAttribute="top" secondItem="2779" secondAttribute="bottom" constant="95"/>
+                            <constraint id="2882" firstItem="2853" firstAttribute="leading" secondItem="2648" secondAttribute="leadingMargin" constant="35">
+                                <variation key="heightClass=compact-widthClass=regular" constant="70"/>
+                            </constraint>
+                            <constraint id="2887" firstItem="2853" firstAttribute="top" secondItem="2779" secondAttribute="bottom" constant="95">
+                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                            </constraint>
                             <constraint id="3044" firstItem="3039" firstAttribute="centerY" secondItem="2853" secondAttribute="centerY"/>
                             <constraint id="3049" firstItem="3039" firstAttribute="leading" secondItem="2853" secondAttribute="trailing" constant="5"/>
                             <constraint id="3054" firstItem="3039" firstAttribute="width" secondItem="2648" secondAttribute="width" multiplier="0.6"/>
@@ -429,6 +507,40 @@
                             <constraint id="25887" firstItem="7065" firstAttribute="bottom" secondItem="7134" secondAttribute="top" constant="293">
                                 <variation key="heightClass=compact-widthClass=regular" constant="-10"/>
                             </constraint>
+                            <constraint id="115848" firstItem="2779" firstAttribute="top" secondItem="2644" secondAttribute="bottom" constant="29">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint id="115849" firstItem="2779" firstAttribute="centerX" secondItem="2648" secondAttribute="centerX"/>
+                            <constraint id="115852" firstItem="3039" firstAttribute="top" secondItem="2779" secondAttribute="bottom" constant="126">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint id="115858" firstItem="3082" firstAttribute="top" secondItem="2853" secondAttribute="bottom" constant="33">
+                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint id="115860" firstItem="4707" firstAttribute="centerY" secondItem="4686" secondAttribute="centerY" constant="8"/>
+                            <constraint id="115865" firstItem="4707" firstAttribute="top" secondItem="3082" secondAttribute="top" constant="5"/>
+                            <constraint id="115866" firstItem="4823" firstAttribute="leading" secondItem="4707" secondAttribute="trailing" constant="8"/>
+                            <constraint id="115867" firstItem="4823" firstAttribute="top" secondItem="3082" secondAttribute="top" constant="5"/>
+                            <constraint id="115868" firstItem="5029" firstAttribute="top" secondItem="3082" secondAttribute="top" constant="5"/>
+                            <constraint id="115869" firstItem="5052" firstAttribute="top" secondItem="3082" secondAttribute="top" constant="5"/>
+                            <constraint id="115870" firstItem="3089" firstAttribute="top" secondItem="3082" secondAttribute="bottom" constant="133">
+                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint id="115871" firstItem="3096" firstAttribute="top" secondItem="3089" secondAttribute="bottom" constant="166">
+                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint id="115872" firstItem="3103" firstAttribute="top" secondItem="3096" secondAttribute="bottom" constant="181">
+                                <variation key="heightClass=compact-widthClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint id="115873" firstItem="7134" firstAttribute="top" secondItem="7065" secondAttribute="bottom" constant="196">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint id="116507" firstItem="5108" firstAttribute="height" secondItem="3039" secondAttribute="height"/>
+                            <constraint id="116508" firstItem="6470" firstAttribute="height" secondItem="5108" secondAttribute="height"/>
+                            <constraint id="116509" firstItem="7065" firstAttribute="height" secondItem="6470" secondAttribute="height"/>
+                            <constraint id="117138" firstItem="2853" firstAttribute="leading" secondItem="2648" secondAttribute="leadingMargin" constant="35">
+                                <variation key="heightClass=compact-widthClass=compact" constant="70"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -450,6 +562,25 @@
                                 <exclude reference="23817"/>
                                 <exclude reference="7166"/>
                                 <exclude reference="25887"/>
+                                <exclude reference="115848"/>
+                                <exclude reference="115849"/>
+                                <exclude reference="115852"/>
+                                <exclude reference="115858"/>
+                                <exclude reference="115860"/>
+                                <exclude reference="115865"/>
+                                <exclude reference="115866"/>
+                                <exclude reference="115867"/>
+                                <exclude reference="115868"/>
+                                <exclude reference="115869"/>
+                                <exclude reference="115870"/>
+                                <exclude reference="115871"/>
+                                <exclude reference="115872"/>
+                                <exclude reference="115873"/>
+                                <exclude reference="116507"/>
+                                <exclude reference="116508"/>
+                                <exclude reference="116509"/>
+                                <exclude reference="2882"/>
+                                <exclude reference="117138"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -463,6 +594,7 @@
                                 <include reference="3130"/>
                                 <include reference="3150"/>
                                 <include reference="7166"/>
+                                <include reference="2882"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -476,6 +608,30 @@
                                 <include reference="23788"/>
                                 <include reference="23817"/>
                                 <include reference="25887"/>
+                                <include reference="2882"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="115848"/>
+                                <include reference="115849"/>
+                                <include reference="115852"/>
+                                <include reference="115858"/>
+                                <include reference="115860"/>
+                                <include reference="115865"/>
+                                <include reference="115866"/>
+                                <include reference="115867"/>
+                                <include reference="115868"/>
+                                <include reference="115869"/>
+                                <include reference="115870"/>
+                                <include reference="115871"/>
+                                <include reference="115872"/>
+                                <include reference="115873"/>
+                                <include reference="116507"/>
+                                <include reference="116508"/>
+                                <include reference="116509"/>
+                                <exclude reference="2882"/>
+                                <include reference="117138"/>
                             </mask>
                         </variation>
                     </view>
@@ -487,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2649" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="497" y="10"/>
+            <point key="canvasLocation" x="499" y="89"/>
         </scene>
         <scene sceneID="11824">
             <objects>
@@ -523,49 +679,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="30162" translatesAutoresizingMaskIntoConstraints="NO" ambiguous="YES">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" id="34851" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                        <rect key="frame" x="-5" y="1" width="424" height="10"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" id="50684" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                                <rect key="frame" x="0.0" y="0.0" width="424" height="10"/>
-                                                <constraints>
-                                                    <constraint id="67844" firstAttribute="height" constant="147">
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="10"/>
-                                                    </constraint>
-                                                    <constraint id="96540" firstAttribute="height" constant="147"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="67844"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="67844"/>
-                                                    </mask>
-                                                </variation>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="linkColor" colorSpace="calibratedRGB" red="0" green="0.47843137254902" blue="1" alpha="1"/>
-                                        <constraints>
-                                            <constraint id="91579" firstAttribute="height" constant="147"/>
-                                            <constraint id="95895" firstAttribute="height" constant="147"/>
-                                        </constraints>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="91579"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="91579"/>
-                                                <exclude reference="95895"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=regular"/>
-                                    </stackView>
                                     <view contentMode="scaleToFill" id="45641" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="62.5" y="157" width="119" height="128"/>
+                                        <rect key="frame" x="67.5" y="194" width="119" height="128"/>
                                         <color key="backgroundColor" colorSpace="calibratedRGB" red="1" green="0.819607843137255" blue="0.207843137254902" alpha="1"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71413" translatesAutoresizingMaskIntoConstraints="NO" image="services.png">
@@ -591,23 +706,32 @@
                                         <constraints>
                                             <constraint id="45872" firstAttribute="height" constant="128"/>
                                             <constraint id="45877" firstAttribute="width" secondItem="45641" secondAttribute="height" multiplier="119:128"/>
-                                            <constraint id="71426" firstItem="71413" firstAttribute="top" secondItem="45641" secondAttribute="top" constant="40"/>
                                             <constraint id="71431" firstItem="71413" firstAttribute="leading" secondItem="45641" secondAttribute="leading" constant="37"/>
                                             <constraint id="72235" firstItem="72230" firstAttribute="top" secondItem="71413" secondAttribute="bottom" constant="8"/>
                                             <constraint id="72352" firstItem="72230" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
                                             <constraint id="72373" firstItem="72230" firstAttribute="leading" secondItem="45641" secondAttribute="leading"/>
+                                            <constraint id="105263" firstItem="71413" firstAttribute="top" secondItem="45641" secondAttribute="top" constant="40"/>
+                                            <constraint id="107890" firstAttribute="height" constant="128"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
                                                 <real key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="107890"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints"/>
+                                        </variation>
                                     </view>
                                     <view contentMode="scaleToFill" id="45658" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="62.5" y="305" width="119" height="128"/>
+                                        <rect key="frame" x="67.5" y="342" width="119" height="128"/>
                                         <color key="backgroundColor" colorSpace="calibratedRGB" red="0.16470588235294117" green="0.78431372549019607" blue="1" alpha="1"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71459" translatesAutoresizingMaskIntoConstraints="NO" image="services.png">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71459" translatesAutoresizingMaskIntoConstraints="NO" image="gallery.png">
                                                 <rect key="frame" x="37" y="40" width="45" height="42"/>
                                                 <constraints>
                                                     <constraint id="71460" firstAttribute="height" constant="42"/>
@@ -642,9 +766,9 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" id="45663" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="232.5" y="305" width="119" height="128"/>
+                                        <rect key="frame" x="227.5" y="342" width="119" height="128"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71482" translatesAutoresizingMaskIntoConstraints="NO" image="services.png">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71482" translatesAutoresizingMaskIntoConstraints="NO" image="contact_us.png">
                                                 <rect key="frame" x="37" y="40" width="45" height="42"/>
                                                 <constraints>
                                                     <constraint id="71483" firstAttribute="height" constant="42"/>
@@ -680,10 +804,10 @@
                                         <color key="backgroundColor" colorSpace="calibratedRGB" red="0" green="0.35686274509803922" blue="0.796078431372549" alpha="1"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="45668" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="232.5" y="157" width="119" height="128"/>
+                                        <rect key="frame" x="227.5" y="194" width="119" height="128"/>
                                         <color key="backgroundColor" colorSpace="custom" customColorSpace="sRGB" red="0.968627450980392" green="0.294117647058824" blue="0.145098039215686" alpha="1"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71436" translatesAutoresizingMaskIntoConstraints="NO" image="services.png">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="71436" translatesAutoresizingMaskIntoConstraints="NO" image="work.png">
                                                 <rect key="frame" x="37" y="40" width="45" height="42"/>
                                                 <constraints>
                                                     <constraint id="71437" firstAttribute="height" constant="42"/>
@@ -717,114 +841,96 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" id="64519" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                        <rect key="frame" x="0.0" y="523" width="375" height="147"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" id="64674" translatesAutoresizingMaskIntoConstraints="NO">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
-                                                <constraints>
-                                                    <constraint id="67912" firstAttribute="height" constant="110">
-                                                        <variation key="heightClass=compact-widthClass=regular" constant="10"/>
-                                                    </constraint>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="67912"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact-widthClass=regular">
-                                                    <mask key="constraints">
-                                                        <include reference="67912"/>
-                                                    </mask>
-                                                </variation>
-                                            </view>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" id="119442" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="-1" y="7" width="414" height="147"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint id="64660" firstAttribute="height" constant="147"/>
+                                            <constraint id="120365" firstAttribute="height" constant="83">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                                            </constraint>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="64660"/>
+                                                <exclude reference="120365"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
+                                        <variation key="heightClass=compact-widthClass=regular">
                                             <mask key="constraints">
-                                                <include reference="64660"/>
+                                                <include reference="120365"/>
                                             </mask>
                                         </variation>
-                                    </stackView>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="119449" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="-1" y="510" width="414" height="147.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint id="34856" firstItem="34851" firstAttribute="centerX" secondItem="30162" secondAttribute="centerX"/>
-                                    <constraint id="34861" firstItem="34851" firstAttribute="width" secondItem="30162" secondAttribute="width">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                                    <constraint id="107889" firstAttribute="centerX" secondItem="45641" secondAttribute="centerX" constant="104">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                                     </constraint>
-                                    <constraint id="46443" firstItem="45668" firstAttribute="height" secondItem="45641" secondAttribute="height"/>
-                                    <constraint id="46448" firstItem="45668" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
-                                    <constraint id="47026" firstItem="45658" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
-                                    <constraint id="47031" firstItem="45658" firstAttribute="height" secondItem="45641" secondAttribute="height"/>
-                                    <constraint id="47036" firstItem="45663" firstAttribute="top" secondItem="45658" secondAttribute="top"/>
-                                    <constraint id="47041" firstItem="45663" firstAttribute="leading" secondItem="45668" secondAttribute="leading"/>
-                                    <constraint id="47046" firstItem="45663" firstAttribute="height" secondItem="45641" secondAttribute="height"/>
-                                    <constraint id="47051" firstItem="45663" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
-                                    <constraint id="64454" firstItem="34851" firstAttribute="top" secondItem="30162" secondAttribute="top"/>
-                                    <constraint id="64464" firstItem="45658" firstAttribute="top" secondItem="45641" secondAttribute="bottom" constant="20"/>
-                                    <constraint id="64632" firstItem="64519" firstAttribute="top" secondItem="45658" secondAttribute="bottom" constant="50"/>
-                                    <constraint id="64655" firstAttribute="bottom" secondItem="64519" secondAttribute="bottom"/>
-                                    <constraint id="64665" firstAttribute="centerX" secondItem="64519" secondAttribute="centerX"/>
-                                    <constraint id="66994" firstItem="64519" firstAttribute="width" secondItem="30162" secondAttribute="width"/>
-                                    <constraint id="67823" firstItem="34851" firstAttribute="top" secondItem="30162" secondAttribute="top" constant="64">
-                                        <variation key="heightClass=compact-widthClass=regular" constant="1"/>
+                                    <constraint id="107908" firstItem="45668" firstAttribute="centerX" secondItem="30162" secondAttribute="centerX" constant="80"/>
+                                    <constraint id="107909" firstItem="45668" firstAttribute="top" secondItem="45641" secondAttribute="top"/>
+                                    <constraint id="107910" firstItem="45668" firstAttribute="height" secondItem="45641" secondAttribute="height"/>
+                                    <constraint id="107911" firstItem="45668" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
+                                    <constraint id="107912" firstItem="45658" firstAttribute="leading" secondItem="45641" secondAttribute="leading"/>
+                                    <constraint id="107913" firstItem="45658" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
+                                    <constraint id="107914" firstItem="45658" firstAttribute="height" secondItem="45641" secondAttribute="height"/>
+                                    <constraint id="107915" firstItem="45658" firstAttribute="top" secondItem="45641" secondAttribute="bottom" constant="20"/>
+                                    <constraint id="107916" firstItem="45663" firstAttribute="top" secondItem="45658" secondAttribute="top"/>
+                                    <constraint id="107917" firstItem="45663" firstAttribute="height" secondItem="45641" secondAttribute="height"/>
+                                    <constraint id="107918" firstItem="45663" firstAttribute="width" secondItem="45641" secondAttribute="width"/>
+                                    <constraint id="107919" firstItem="45663" firstAttribute="trailing" secondItem="45668" secondAttribute="trailing"/>
+                                    <constraint id="108514" firstAttribute="centerX" secondItem="45641" secondAttribute="centerX" constant="241">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="80"/>
                                     </constraint>
-                                    <constraint id="67874" firstItem="45641" firstAttribute="top" secondItem="34851" secondAttribute="bottom" constant="62">
-                                        <variation key="heightClass=compact-widthClass=regular" constant="40"/>
+                                    <constraint id="111580" firstAttribute="centerX" secondItem="45641" secondAttribute="centerX" constant="80"/>
+                                    <constraint id="119444" firstItem="119442" firstAttribute="top" secondItem="30162" secondAttribute="top" constant="7"/>
+                                    <constraint id="119445" firstItem="119442" firstAttribute="width" secondItem="30162" secondAttribute="width"/>
+                                    <constraint id="119446" firstAttribute="centerX" secondItem="119442" secondAttribute="centerX" constant="1"/>
+                                    <constraint id="119447" firstItem="119442" firstAttribute="height" secondItem="30162" secondAttribute="height" multiplier="0.2"/>
+                                    <constraint id="119448" firstItem="45641" firstAttribute="top" secondItem="119442" secondAttribute="bottom" constant="40"/>
+                                    <constraint id="119450" firstItem="119449" firstAttribute="width" secondItem="30162" secondAttribute="width"/>
+                                    <constraint id="119451" firstItem="119449" firstAttribute="height" secondItem="119442" secondAttribute="height"/>
+                                    <constraint id="119452" firstAttribute="centerX" secondItem="119449" secondAttribute="centerX" constant="1">
+                                        <variation key="heightClass=compact-widthClass=regular"/>
                                     </constraint>
-                                    <constraint id="67895" firstItem="64519" firstAttribute="bottom" secondItem="30162" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="92754" firstAttribute="centerX" secondItem="45641" secondAttribute="centerX" constant="80">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="85"/>
-                                    </constraint>
-                                    <constraint id="92755" firstItem="45668" firstAttribute="centerX" secondItem="30162" secondAttribute="centerX" constant="82">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="85"/>
-                                    </constraint>
-                                    <constraint id="94323" firstItem="45668" firstAttribute="top" secondItem="45641" secondAttribute="top"/>
-                                    <constraint id="94325" firstItem="45658" firstAttribute="leading" secondItem="45641" secondAttribute="leading"/>
-                                    <constraint id="96555" firstItem="45641" firstAttribute="top" secondItem="34851" secondAttribute="bottom" constant="10"/>
+                                    <constraint id="119454" firstAttribute="bottom" secondItem="119449" secondAttribute="bottom" constant="45"/>
+                                    <constraint id="119455" firstItem="119449" firstAttribute="top" secondItem="45658" secondAttribute="bottom" constant="40"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="64454"/>
-                                        <exclude reference="67823"/>
-                                        <exclude reference="64655"/>
-                                        <exclude reference="67895"/>
-                                        <exclude reference="34861"/>
-                                        <exclude reference="96555"/>
-                                        <exclude reference="67874"/>
+                                        <exclude reference="107889"/>
+                                        <exclude reference="108514"/>
+                                        <exclude reference="111580"/>
+                                        <exclude reference="119451"/>
+                                        <exclude reference="119447"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="constraints">
-                                        <include reference="64454"/>
-                                        <include reference="64655"/>
-                                        <include reference="34861"/>
-                                        <include reference="96555"/>
-                                        <include reference="67874"/>
+                                        <include reference="107889"/>
+                                        <include reference="119451"/>
+                                        <include reference="119447"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact-widthClass=regular">
                                     <mask key="constraints">
-                                        <include reference="67823"/>
-                                        <include reference="67895"/>
-                                        <include reference="67874"/>
+                                        <include reference="108514"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="111580"/>
                                     </mask>
                                 </variation>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint id="30167" firstItem="30162" firstAttribute="centerX" secondItem="28804" secondAttribute="centerX"/>
-                            <constraint id="30172" firstItem="30162" firstAttribute="centerY" secondItem="28804" secondAttribute="centerY"/>
-                            <constraint id="30182" firstItem="30162" firstAttribute="width" secondItem="28804" secondAttribute="width"/>
-                            <constraint id="58230" firstItem="30162" firstAttribute="height" secondItem="28804" secondAttribute="height"/>
-                            <constraint id="60126" firstItem="30162" firstAttribute="bottom" secondItem="28804" secondAttribute="bottom"/>
+                            <constraint id="107834" firstItem="30162" firstAttribute="centerY" secondItem="28804" secondAttribute="centerY"/>
+                            <constraint id="107835" firstItem="30162" firstAttribute="centerX" secondItem="28804" secondAttribute="centerX"/>
+                            <constraint id="107836" firstItem="30162" firstAttribute="height" secondItem="28804" secondAttribute="height"/>
+                            <constraint id="107837" firstItem="30162" firstAttribute="width" secondItem="28804" secondAttribute="width"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" id="28975" image="home.png" title="Home"/>
@@ -945,6 +1051,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="107845" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="-36" y="28" width="375" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint id="108515" firstAttribute="height" constant="147">
+                                        <variation key="heightClass=compact-widthClass=regular" constant="20"/>
+                                    </constraint>
+                                    <constraint id="111582" firstAttribute="height" constant="20"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="108515"/>
+                                        <exclude reference="111582"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="108515"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="111582"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72224" userLabel="First Responder" sceneMemberID="firstResponder"/>

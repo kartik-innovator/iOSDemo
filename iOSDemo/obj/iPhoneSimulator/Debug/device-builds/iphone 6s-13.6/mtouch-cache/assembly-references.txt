@@ -1,4 +1,4 @@
-/Users/admin/Projects/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/iOSDemo.exe
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/iOSDemo.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.20.2.2/lib/mono/Xamarin.iOS/System.dll

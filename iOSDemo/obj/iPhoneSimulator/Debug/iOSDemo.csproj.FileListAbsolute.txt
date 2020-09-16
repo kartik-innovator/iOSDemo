@@ -37,3 +37,42 @@
 /Users/admin/Projects/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 6s-13.6/optimized/person.png
 /Users/admin/Projects/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 6s-13.6/optimized/shutdown.png
 /Users/admin/Projects/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 6s-13.6/optimized/
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/iOSDemo.exe
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/iOSDemo.pdb
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/Xamarin.Essentials.dll
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/Xamarin.Essentials.pdb
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/XamarinComponent.Base.dll
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/bin/iPhoneSimulator/Debug/XamarinComponent.iOS.dll
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/iOSDemo.csprojAssemblyReference.cache
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/iOSDemo.csproj.CoreCompileInputs.cache
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/iOSDemo.csproj.CopyComplete
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/iOSDemo.exe
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/iOSDemo.pdb
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/ibtool/_BundleResourceWithLogicalName.items
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/_PartialAppManifest.items
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/actool/_BundleResourceWithLogicalName.items
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/coremlc/_PartialAppManifest.items
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/coremlc/_BundleResourceWithLogicalName.items
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/logo.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/super-HD_1 (1).png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/facebook_logo.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/google_logo.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/calendar.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/email.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/gender.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/password.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/user.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/checkbox.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/done.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/radio_select.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/radio.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/contact_us.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/services.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/home.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/settings.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/gallery.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/work.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/bell.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/person.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/shutdown.png
+/Users/admin/Documents/Git/iOSDemo/iOSDemo/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.6/optimized/
